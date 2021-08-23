@@ -1,0 +1,15 @@
+
+<h1 *ngIf="isViewable">{{title}}</h1>
+
+<input type="text" [(ngModel)]="title">
+
+<button (click)="addToArray()">Add</button>
+<ul>
+  <li *ngFor="let item of myArray">{{item}}</li>
+</ul>
+
+<button (click)="addToUsers()">Add User</button>
+<ul>
+  <li *ngFor="let user of users">{{user.name}}</li>
+</ul>
+
